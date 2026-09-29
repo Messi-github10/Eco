@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Runtime data (cache, sqlite, exported workbooks)
+/data/*
+!/data/.gitkeep
+
+# Generated outputs. Fund codes and NAV dumps are fetched, not source.
+*.xlsx
+*.xls
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
