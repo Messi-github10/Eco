@@ -9,6 +9,12 @@ from __future__ import annotations
 import pandas as pd
 
 
+# 净值表列名到中文含义，写 Excel 时作为表头说明。
+NAV_LABELS = {
+    "date": "净值日期",
+    "nav": "单位净值",
+    "fund_code": "基金代码",
+}
 def fetch_nav_history(fund_code: str) -> pd.DataFrame:
     """Fetch a fund's unit NAV history from AkShare.
 
